@@ -1,0 +1,165 @@
+    body, h1, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+    }
+           /*CSS Grid*/
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "footer";
+        gap: 20px;
+        padding: 20px;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-area: header;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    main {
+        text-align: center;
+        grid-area: main;
+    }
+
+    section {
+        background-color: black;
+        padding: 20px;
+        border: 1px solid orangered;
+        margin: 20px 0;
+    }
+
+    section h1 {
+        font-size: 24px;
+        color: khaki;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        font-size: 16px;
+        color: white;
+    }
+
+    section h2 {
+        font-size: 16px;
+        color: chocolate;
+    }
+
+    section li {
+        font-size: 16px;
+        color: white;
+    }
+
+    section a {
+        text-decoration: underline;
+        color: #0073e6;
+    }
+
+    section a:hover {
+        color: #004a99;
+    }
+
+    #experience {
+        background-color: black;
+    }
+
+    #experience h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .job {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    .job h2 {
+        color: aqua;
+    }
+
+    .certifications {
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 320px;
+        padding: 20px;
+        border: 1px solid blue;
+    }
+
+    #experience img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    .project-item {
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 300px;
+        padding: 20px;
+        border: 1px solid skyblue;
+    }
+
+    #projects img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        text-decoration: underline;
+        color: orangered;
+    }
+
+    footer p {
+        color: orangered;
+    }
+
+    @media (max-width: 500px) {
+        .container {
+            padding: 10px;
+        }
+        section {
+            padding: 10px;
+        }
+    }
